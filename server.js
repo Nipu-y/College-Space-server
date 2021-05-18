@@ -73,6 +73,7 @@ io.on('connection', (socket) => {
 
 
 //ROUTES
+app.use('/',(req,res)=>res.send("This is College Space Server"))
 app.use('/api/admin', adminRoutes)
 app.use('/api/faculty', facultyRoutes)
 app.use('/api/student', studentRoutes)
